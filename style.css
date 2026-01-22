@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+
+#title {
+    font-family: "Limelight", sans-serif;
+    color: gray;
+    transition: color 0.5s ease;
+    text-shadow: 2px 2px 4px rgba(194, 191, 191, 0.7);
+}
+
+body {
+    background-image: url('Fondo.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+img {
+    border-radius: 50%;
+}
+
+.btn {
+    font-size: 20px;
+    font-family: "Limelight", sans-serif;
+}
+
