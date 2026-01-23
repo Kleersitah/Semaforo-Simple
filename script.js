@@ -4,6 +4,8 @@ const boton3 = document.querySelector("#btn-verde")
 
 const titulo = document.querySelector("#title")
 
+
+
 boton.addEventListener("click", () =>{
     if (boton.innerText === "Rojo"){
         boton.innerText = "Apagar"
@@ -12,6 +14,8 @@ boton.addEventListener("click", () =>{
         document.getElementById("title").style.color = "#972222"
         document.getElementById("title").style.textShadow = "2px 2px 4px #ed565676"
         document.getElementById("btn-rojo").style.backgroundColor = "#fd0105"
+        boton2.disabled = true
+        boton3.disabled = true
        
 
     } else {
@@ -21,6 +25,8 @@ boton.addEventListener("click", () =>{
         document.getElementById("title").style.color = "gray"
         document.getElementById("title").style.textShadow = "2px 2px 4px rgba(194, 191, 191, 0.7)"
         document.getElementById("btn-rojo").style.backgroundColor = "gray"
+        boton2.disabled = false
+        boton3.disabled = false
     }
 
 
@@ -36,6 +42,8 @@ boton2.addEventListener("click", () =>{
         document.getElementById("title").style.color = "#e7e247"
         document.getElementById("title").style.textShadow = "2px 2px 4px #edd65676"
         document.getElementById("btn-amarillo").style.backgroundColor = "#fdf705"
+        boton.disabled = true
+        boton3.disabled = true
        
 
     } else {
@@ -45,6 +53,8 @@ boton2.addEventListener("click", () =>{
         document.getElementById("title").style.color = "gray"
         document.getElementById("title").style.textShadow = "2px 2px 4px rgba(194, 191, 191, 0.7)"
         document.getElementById("btn-amarillo").style.backgroundColor = "gray"
+        boton.disabled = false
+        boton3.disabled = false
     }
 
 
@@ -60,6 +70,8 @@ boton3.addEventListener("click", () =>{
         document.getElementById("title").style.color = "#309722"
         document.getElementById("title").style.textShadow = "2px 2px 4px #65ed5676"
         document.getElementById("btn-verde").style.backgroundColor = "#a6ff00"
+        boton.disabled = true
+        boton2.disabled = true
        
 
     } else {
@@ -69,10 +81,11 @@ boton3.addEventListener("click", () =>{
         document.getElementById("title").style.color = "gray"
         document.getElementById("title").style.textShadow = "2px 2px 4px rgba(194, 191, 191, 0.7)"
         document.getElementById("btn-verde").style.backgroundColor = "gray" 
+        boton.disabled = false
+        boton2.disabled = false
     }
 
 
 
 
 })
-
